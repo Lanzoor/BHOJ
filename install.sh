@@ -1,7 +1,6 @@
 #!/bin/bash
 set -e
 
-# --- curl bootstrap ---
 if [[ "${BASH_SOURCE[0]}" == "/dev/stdin" ]]; then
     REPO="Lanzoor/BHOJ"
     TMP_DIR="$(mktemp -d)"
@@ -12,7 +11,6 @@ if [[ "${BASH_SOURCE[0]}" == "/dev/stdin" ]]; then
     chmod +x "$TMP_DIR/BHOJ/install.sh"
     exec "$TMP_DIR/BHOJ/install.sh"
 fi
-# ---------------------
 
 APP_NAME="bhoj"
 SCRIPT_NAME="bhoj.sh"
@@ -46,7 +44,7 @@ if $HAS_LOCAL || $HAS_SYSTEM; then
 fi
 
 echo
-read -rp "Enter choice [default: 1]: " choice
+read -rp "Enter choice [default: 1]: " choice || true
 choice=${choice:-1}
 
 chmod +x "$TARGET"
