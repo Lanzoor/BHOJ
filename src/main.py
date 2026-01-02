@@ -2,7 +2,7 @@ import sys, pathlib
 from lib.styles import *
 
 APP_NAME = "Bro Had One Job Compiler"
-VERSION = "1.0.2"
+VERSION = "1.0.3"
 
 HELP_FLAGS = {"-h", "--help"}
 REVERSE_FLAGS = {"-r", "--reverse"}
@@ -83,11 +83,13 @@ if reverse:
     for char in code:
         if char in token_map:
             output.append(token_map[char])
+    compiled = " ".join(output)
 else:
     tokens = code.lower().split()
     for token in tokens:
         if token in token_map:
             output.append(token_map[token])
+    compiled = "".join(output)
 
 compiled = "".join(output) if not reverse else " ".join(output)
 

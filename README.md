@@ -30,9 +30,5 @@ cd BHOJ
 
 You can uninstall BHOJ from your device by running the installation script again. **You will see an uninstall option.**
 
-## Example usage
+## Example in BHOJ
 
-```sh
-bhoj main.bhoj
-brainfuck main.bf
-```
