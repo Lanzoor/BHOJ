@@ -32,3 +32,20 @@ You can uninstall BHOJ from your device by running the installation script again
 
 ## Example in BHOJ
 
+Here's an example of a BHOJ code.
+
+```
+one one one one one one one one one one 😭 had one one one one one one one had one one one one one one one one one one had one one one had one bro bro bro bro job 🥀 had one one ts had one ts one one one one one one one ts ts one one one ts had one one ts bro bro one one one one one one one one one one one one one one one ts had ts one one one ts job job job job job job ts job job job job job job job job ts had one ts had ts
+```
+
+When you compile this BHOJ code, it gets compiled into this Brainfuck code;
+
+```
+++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.
+```
+
+And, when you run this exact Brainfuck code, it prints out;
+
+```
+Hello, World!
+```
