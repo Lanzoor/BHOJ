@@ -21,17 +21,8 @@ The language has **8 tokens that you can use, and they are:**
 
 ## Installation
 
-Run _either_ of this! **DO NOT RUN BOTH OF THEM!**
-
-### Curl install
-
 ```sh
-curl -fsSL https://raw.githubusercontent.com/Lanzoor/BHOJ/main/install.sh | bash
-```
-
-### Local clone install
-
-```sh
+cd ~/Downloads
 git clone https://github.com/Lanzoor/BHOJ.git
 cd BHOJ
 ./install.sh
@@ -45,4 +36,3 @@ You can uninstall BHOJ from your device by running the installation script again
 bhoj main.bhoj
 brainfuck main.bf
 ```
-
